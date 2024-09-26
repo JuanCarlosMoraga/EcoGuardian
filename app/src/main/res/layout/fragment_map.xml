@@ -11,13 +11,12 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/design_default_color_primary"
+        android:background="#3F51B5"
         app:title="Mapa"
         android:titleTextColor="@android:color/white"
-        android:navigationIcon="@drawable/ic_back_arrow"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Texto con la hora -->
     <TextView
@@ -32,16 +31,18 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp" />
 
-    <!-- MapView para el mapa -->
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
+    <!-- Imagen del mapa estático -->
+    <ImageView
+        android:id="@+id/staticMap"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:src="@drawable/mapa"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/buttonLayout"
-        android:layout_marginTop="8dp"/>
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp" />
 
     <!-- Layout de botones (rojo, amarillo, azul) -->
     <LinearLayout
@@ -79,6 +80,5 @@
             android:backgroundTint="@android:color/holo_blue_dark"
             android:text="" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_primary"
+    android:background="#3F51B5"
     tools:context=".MainActivity">
 
     <!-- Logo superior -->
@@ -53,7 +53,7 @@
             android:id="@+id/btnCreateAccount"
             android:layout_marginEnd="16dp"
             app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="@color/design_default_color_primary">
+            app:cardBackgroundColor="#3F51B5">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -84,7 +84,7 @@
             android:id="@+id/btnLogin"
             android:layout_marginStart="16dp"
             app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="@color/design_default_color_primary">
+            app:cardBackgroundColor="#3F51B5">
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -49,4 +49,14 @@
         android:name="com.moraga.ecoguardian.MapFragment"
         android:label="fragment_map"
         tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.moraga.ecoguardian.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.moraga.ecoguardian.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
 </navigation>
