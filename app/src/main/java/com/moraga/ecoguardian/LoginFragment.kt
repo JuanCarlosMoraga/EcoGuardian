@@ -26,7 +26,7 @@ class LoginFragment : Fragment() {
             val password = binding.etPassword.text.toString().trim()
 
             if (validateCredentials(username, password)) {
-                findNavController().navigate(R.id.action_loginFragment_to_commentFragment)
+                findNavController().navigate(R.id.action_loginFragment_to_mainEcosystemFragment)
             } else {
                 binding.etUsername.error = "Usuario o contraseña incorrectos"
                 binding.etPassword.error = "Usuario o contraseña incorrectos"

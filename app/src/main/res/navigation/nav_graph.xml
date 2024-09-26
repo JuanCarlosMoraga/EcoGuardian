@@ -23,8 +23,8 @@
         android:label="fragment_create_account"
         tools:layout="@layout/fragment_create_account" >
         <action
-            android:id="@+id/action_createAccountFragment_to_commentFragment"
-            app:destination="@id/commentFragment" />
+            android:id="@+id/action_createAccountFragment_to_mainEcosystemFragment"
+            app:destination="@id/mainEcosystemFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -32,18 +32,14 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_commentFragment"
-            app:destination="@id/commentFragment" />
+            android:id="@+id/action_loginFragment_to_mainEcosystemFragment"
+            app:destination="@id/mainEcosystemFragment" />
     </fragment>
     <fragment
         android:id="@+id/commentFragment"
         android:name="com.moraga.ecoguardian.CommentFragment"
         android:label="fragment_comment"
-        tools:layout="@layout/fragment_comment" >
-        <action
-            android:id="@+id/action_commentFragment_to_mapFragment"
-            app:destination="@id/mapFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_comment" />
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.moraga.ecoguardian.MapFragment"
@@ -59,4 +55,22 @@
         android:name="com.moraga.ecoguardian.NotificationsFragment"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/mainEcosystemFragment"
+        android:name="com.moraga.ecoguardian.MainEcosystemFragment"
+        android:label="fragment_main_ecosystem"
+        tools:layout="@layout/fragment_main_ecosystem" >
+        <action
+            android:id="@+id/action_mainEcosystemFragment_to_commentFragment2"
+            app:destination="@id/commentFragment" />
+        <action
+            android:id="@+id/action_mainEcosystemFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_mainEcosystemFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_mainEcosystemFragment_to_mapFragment2"
+            app:destination="@id/mapFragment" />
+    </fragment>
 </navigation>
