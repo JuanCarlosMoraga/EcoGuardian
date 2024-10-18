@@ -4,7 +4,7 @@
     <item
         android:id="@+id/maps"
         android:title="Mapa"
-        android:icon="@drawable/map"
+        android:icon="@drawable/iconodemapa"
         app:showAsAction="always" />
 
     <item
@@ -16,7 +16,7 @@
     <item
         android:id="@+id/report"
         android:title="Reportes"
-        android:icon="@drawable/report"
+        android:icon="@drawable/iconodereportes"
         app:showAsAction="always" />
     <item
         android:id="@+id/notifications"

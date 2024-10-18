@@ -7,6 +7,8 @@
     tools:context=".ReportFragment">
 
     <!-- Toolbar personalizada con botón de retroceso -->
+
+    <!-- Texto de hora y fecha -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -15,11 +17,11 @@
         android:title="Reportes"
         android:titleTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/west_24" />
 
-    <!-- Texto de hora y fecha -->
     <TextView
         android:id="@+id/tvTime"
         android:layout_width="wrap_content"

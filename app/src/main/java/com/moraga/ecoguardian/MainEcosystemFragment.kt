@@ -36,16 +36,18 @@ class MainEcosystemFragment : Fragment() {
         }
 
         // Cargar imagen de la flora y fauna
-        binding.imgFloraFauna.setImageResource(R.drawable.flora_y_fauna_de_nicaragua_3347_orig) // Cambia por la imagen correcta
+        binding.Managua.setImageResource(R.drawable.logoinicio) //
 
         // Simular carga de datos (puede provenir de una base de datos o de una API)
-        binding.tvFloraTitle.text = "Flora"
+        binding.tvFloraTitle.text = "Objetivo General"
         binding.tvFloraDesc.text =
-            "La flora en esta región es muy diversa, incluyendo especies como el roble, la ceiba, y numerosas flores exóticas."
+            "Desarrollar una aplicación móvil que facilite la denuncia de botaderos ilegales de basura en Managua, promoviendo la participación ciudadana y mejorando la gestión de residuos sólidos por parte de la Alcaldía para contribuir a una ciudad más limpia, segura y sostenible."
 
-        binding.tvFaunaTitle.text = "Fauna"
+        binding.tvFaunaTitle.text = "Objetivo Especifico"
         binding.tvFaunaDesc.text =
-            "La fauna local es rica en especies, destacándose el jaguar, el venado cola blanca, y una variedad de aves tropicales."
+            "1.\tCrear un sistema interactivo de reportes que permita a los ciudadanos identificar y denunciar botaderos ilegales, incluyendo la ubicación GPS, fotos y descripciones detalladas.\n" +
+                    "2.\tImplementar un panel de control para la Alcaldía que optimice la gestión y priorización de las acciones de limpieza, mediante herramientas de análisis y generación de informes.\n" +
+                    "3.\tIntegrar la aplicación con redes sociales y una base de datos centralizada, fomentando la conciencia ciudadana sobre la problemática de los botaderos ilegales y facilitando el seguimiento de los reportes por parte de los usuarios."
 
         return binding.root // Retorna la vista inflada
     }

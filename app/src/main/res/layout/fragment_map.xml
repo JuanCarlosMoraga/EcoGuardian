@@ -11,12 +11,13 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#3F51B5"
+        android:background="#8bb272"
         app:title="Mapa"
         android:titleTextColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:navigationIcon="@drawable/west_24"/>
 
     <!-- Texto con la hora -->
     <TextView
@@ -59,11 +60,11 @@
             android:id="@+id/btnRed"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:backgroundTint="@android:color/holo_red_dark"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
             android:text="" />
 
-        <!-- Botón amarillo -->
+
         <Button
             android:id="@+id/btnYellow"
             android:layout_width="48dp"
@@ -71,8 +72,7 @@
             android:backgroundTint="@android:color/holo_orange_light"
             android:layout_marginEnd="16dp"
             android:text="" />
-
-        <!-- Botón azul -->
+        
         <Button
             android:id="@+id/btnBlue"
             android:layout_width="48dp"

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50"
+    android:background="#1d3254"
     tools:context=".MainEcosystemFragment">
 
     <!-- Toolbar -->
@@ -13,21 +13,21 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#3F51B5"
+        android:background="#8bb272"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Ecosistema" />
+        app:title="Mombacho Creatio" />
 
     <!-- ImageView para la imagen de flora y fauna -->
     <ImageView
-        android:id="@+id/imgFloraFauna"
+        android:id="@+id/Managua"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/flora_y_fauna_de_nicaragua_3347_orig"
+        android:src="@drawable/login"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,11 +38,11 @@
         android:id="@+id/tvFloraTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Flora"
+        android:text="Objetivo General"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/imgFloraFauna"
+        app:layout_constraintTop_toBottomOf="@id/Managua"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
@@ -52,7 +52,7 @@
         android:id="@+id/tvFloraDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Descripción de la flora"
+        android:text="Objetivos general"
         android:textSize="16sp"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/tvFloraTitle"
@@ -67,7 +67,7 @@
         android:id="@+id/tvFaunaTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fauna"
+        android:text="Objetivos Especificos"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="#FFFFFF"
@@ -81,7 +81,7 @@
         android:id="@+id/tvFaunaDesc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Descripción de la fauna"
+        android:text="Objetivos Especificos"
         android:textSize="16sp"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/tvFaunaTitle"
