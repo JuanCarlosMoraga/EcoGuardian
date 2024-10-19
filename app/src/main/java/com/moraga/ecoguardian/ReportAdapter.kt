@@ -15,7 +15,17 @@ class Report (
 
 class ReportAdapter(private val reportList: List<Report>) : RecyclerView.Adapter<ReportAdapter.ReportViewHolder>() {
 
+    /**
+     * ViewHolder para mostrar un único elemento de reporte.
+     *
+     * @property binding El objeto de enlace para el diseño del elemento de reporte.
+     */
     inner class ReportViewHolder(val binding: ItemReportBinding) : RecyclerView.ViewHolder(binding.root) {
+        /**
+         * Vincula los datos del reporte a las vistas en el ViewHolder.
+         *
+         * @param report El objeto Report que contiene los datos a mostrar.
+         */
         fun bind(report: Report) {
             binding.tvUser.text = report.userName
             binding.tvLocation.text = report.location
@@ -25,14 +35,17 @@ class ReportAdapter(private val reportList: List<Report>) : RecyclerView.Adapter
         }
     }
 
+
+     //Crea un nuevo ViewHolder para los elementos de reporte.
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReportViewHolder {
         val binding = ItemReportBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ReportViewHolder(binding)
     }
-
+    //Vincula los datos del reporte al ViewHolder especificado.
     override fun onBindViewHolder(holder: ReportViewHolder, position: Int) {
         holder.bind(reportList[position])
     }
-
+    //Retorna el número total de reportes en la lista.
     override fun getItemCount(): Int = reportList.size
 }
