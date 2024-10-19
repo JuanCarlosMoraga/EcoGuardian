@@ -4,23 +4,23 @@
     <item
         android:id="@+id/maps"
         android:title="Mapa"
-        android:icon="@drawable/iconodemapa"
+        android:icon="@drawable/map"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/comment"
         android:title="Comentarios"
-        android:icon="@drawable/comment"
+        android:icon="@drawable/noti"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/report"
         android:title="Reportes"
-        android:icon="@drawable/iconodereportes"
+        android:icon="@drawable/repor"
         app:showAsAction="always" />
     <item
         android:id="@+id/notifications"
         android:title="Notificaciones"
-        android:icon="@drawable/notificaciones"
+        android:icon="@drawable/notifi"
         app:showAsAction="always" />
 </menu>

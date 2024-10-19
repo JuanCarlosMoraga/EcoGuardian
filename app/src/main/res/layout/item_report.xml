@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:background="#0028EE"
+    android:background="#1d3254"
     android:elevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4544F4"
+        android:background="#1d3254"
         android:orientation="vertical"
         android:padding="8dp">
 
@@ -76,7 +76,8 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:src="@drawable/basurero" />
 
         <!-- Botones de acción -->
@@ -93,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:text="Apoyar"
                 android:textColor="@android:color/white"
-                android:backgroundTint="@color/design_default_color_primary_dark"
+                android:backgroundTint="@color/botones"
                 android:layout_marginEnd="16dp" />
 
             <Button
@@ -102,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:text="Comentar"
                 android:textColor="@android:color/white"
-                android:backgroundTint="@color/design_default_color_primary_dark" />
+                android:backgroundTint="@color/botones" />
         </LinearLayout>
 
     </LinearLayout>

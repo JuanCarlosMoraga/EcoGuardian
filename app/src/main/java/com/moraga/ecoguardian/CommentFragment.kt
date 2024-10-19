@@ -13,7 +13,9 @@ import android.Manifest
 import android.app.Activity
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import androidx.navigation.fragment.findNavController
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.moraga.ecoguardian.databinding.FragmentCommentBinding
@@ -27,28 +29,30 @@ class CommentFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentCommentBinding.inflate(inflater, container, false)
 
-        // Inicializar FusedLocationProviderClient
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
 
-        // Botón para seleccionar imagen/video
         binding.btnSelectMedia.setOnClickListener {
             val pickPhotoIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             pickPhotoIntent.type = "image/*"
             startActivityForResult(pickPhotoIntent, REQUEST_PICK_IMAGE)
         }
 
-        // Botón para obtener ubicación
         binding.btnLocation.setOnClickListener {
             getLocation()
         }
 
-        // Botón para publicar
         binding.btnPost.setOnClickListener {
             val comment = binding.etComment.text.toString()
+
             // Lógica para subir imagen, comentario y ubicación
+            Toast.makeText(requireContext(), "Publicación creada", Toast.LENGTH_SHORT).show()
+
+            // Clear the input fields and reset the image preview
+            binding.etComment.text?.clear()
+            binding.tvLocation.text = "Ubicación: "
+            binding.ivPreview.setImageURI(null) // Clear the image preview
         }
 
         return binding.root

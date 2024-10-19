@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
+    android:background="#1d3254"
     tools:context=".NotificationsFragment">
 
     <!-- Toolbar personalizada -->
@@ -33,17 +33,19 @@
         android:layout_marginEnd="12dp" />
 
     <!-- Botón de filtro -->
+
+    <!-- Lista de notificaciones -->
     <ImageButton
         android:id="@+id/btnFilter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:src="@drawable/filter_list_24"
-    android:layout_marginEnd="16dp"
-    app:layout_constraintTop_toBottomOf="@id/toolbar"
-    app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
-    <!-- Lista de notificaciones -->
     <LinearLayout
         android:id="@+id/notificationList"
         android:layout_width="match_parent"
@@ -67,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:text="Ver"
                 android:textColor="@android:color/white"
-                android:backgroundTint="@color/design_default_color_primary" />
+                android:backgroundTint="@color/botones" />
 
             <TextView
                 android:id="@+id/tvNotification"

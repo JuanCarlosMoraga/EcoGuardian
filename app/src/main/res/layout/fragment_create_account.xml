@@ -8,9 +8,6 @@
     android:background="#1d3254"
     tools:context=".CreateAccountFragment">
 
-    <!-- Logo superior -->
-
-    <!-- Título "Crear cuenta" -->
 
     <!-- Descripción para Nombre de usuario -->
 
@@ -64,6 +61,7 @@
         app:layout_constraintWidth_percent="0.8">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/IUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"

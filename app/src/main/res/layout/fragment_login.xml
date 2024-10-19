@@ -35,12 +35,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
-    <!-- Campo: Nombre de usuario -->
+    <!-- Campo: Correo electrónico -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TINameUserLogin"
+        android:id="@+id/TIEmailLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Nombre de usuario"
+        android:hint="Correo electrónico"
         app:boxStrokeColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -67,7 +67,7 @@
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TINameUserLogin"
+        app:layout_constraintTop_toBottomOf="@id/TIEmailLogin"
         app:layout_constraintWidth_percent="0.8"
         app:passwordToggleTint="@android:color/white">
 
